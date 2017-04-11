@@ -67,7 +67,7 @@ extension BookTableViewController {
                     self.tableView.reloadData()
                 }
             } catch { return }
-            }.resume()
+        }.resume()
     }
 }
 
