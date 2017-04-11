@@ -16,6 +16,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        class WhiteStatusBarNavigationController: UINavigationController {
+            override var preferredStatusBarStyle: UIStatusBarStyle {
+                return .lightContent
+            }
+        }
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        window?.rootViewController = WhiteStatusBarNavigationController(rootViewController: BookTableViewController())
+        
         return true
     }
 

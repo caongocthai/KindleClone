@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		301BF7D21E9CEF0400245755 /* PageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301BF7D11E9CEF0400245755 /* PageCollectionViewController.swift */; };
+		301BF7D41E9D074F00245755 /* PageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301BF7D31E9D074F00245755 /* PageCollectionViewCell.swift */; };
 		30A9DD1C1E9BC6E900C13891 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A9DD1B1E9BC6E900C13891 /* AppDelegate.swift */; };
-		30A9DD1E1E9BC6E900C13891 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A9DD1D1E9BC6E900C13891 /* ViewController.swift */; };
-		30A9DD211E9BC6E900C13891 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30A9DD1F1E9BC6E900C13891 /* Main.storyboard */; };
 		30A9DD231E9BC6E900C13891 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30A9DD221E9BC6E900C13891 /* Assets.xcassets */; };
 		30A9DD261E9BC6E900C13891 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30A9DD241E9BC6E900C13891 /* LaunchScreen.storyboard */; };
+		30A9DD2E1E9BC8E200C13891 /* BookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A9DD2D1E9BC8E200C13891 /* BookTableViewController.swift */; };
+		30A9DD311E9BCEB100C13891 /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A9DD301E9BCEB100C13891 /* BookTableViewCell.swift */; };
+		30A9DD331E9BD4C300C13891 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A9DD321E9BD4C300C13891 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		301BF7D11E9CEF0400245755 /* PageCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageCollectionViewController.swift; sourceTree = "<group>"; };
+		301BF7D31E9D074F00245755 /* PageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageCollectionViewCell.swift; sourceTree = "<group>"; };
 		30A9DD181E9BC6E900C13891 /* KindleClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KindleClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30A9DD1B1E9BC6E900C13891 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		30A9DD1D1E9BC6E900C13891 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		30A9DD201E9BC6E900C13891 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		30A9DD221E9BC6E900C13891 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30A9DD251E9BC6E900C13891 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30A9DD271E9BC6E900C13891 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30A9DD2D1E9BC8E200C13891 /* BookTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTableViewController.swift; sourceTree = "<group>"; };
+		30A9DD301E9BCEB100C13891 /* BookTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
+		30A9DD321E9BD4C300C13891 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +41,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		301BF7D01E9CEEDB00245755 /* CollectionOfPages */ = {
+			isa = PBXGroup;
+			children = (
+				301BF7D11E9CEF0400245755 /* PageCollectionViewController.swift */,
+				301BF7D31E9D074F00245755 /* PageCollectionViewCell.swift */,
+			);
+			name = CollectionOfPages;
+			sourceTree = "<group>";
+		};
 		30A9DD0F1E9BC6E900C13891 = {
 			isa = PBXGroup;
 			children = (
@@ -55,13 +70,23 @@
 			isa = PBXGroup;
 			children = (
 				30A9DD1B1E9BC6E900C13891 /* AppDelegate.swift */,
-				30A9DD1D1E9BC6E900C13891 /* ViewController.swift */,
-				30A9DD1F1E9BC6E900C13891 /* Main.storyboard */,
+				30A9DD321E9BD4C300C13891 /* Model.swift */,
+				30A9DD2F1E9BCC7E00C13891 /* TableOfBooks */,
+				301BF7D01E9CEEDB00245755 /* CollectionOfPages */,
 				30A9DD221E9BC6E900C13891 /* Assets.xcassets */,
 				30A9DD241E9BC6E900C13891 /* LaunchScreen.storyboard */,
 				30A9DD271E9BC6E900C13891 /* Info.plist */,
 			);
 			path = KindleClone;
+			sourceTree = "<group>";
+		};
+		30A9DD2F1E9BCC7E00C13891 /* TableOfBooks */ = {
+			isa = PBXGroup;
+			children = (
+				30A9DD2D1E9BC8E200C13891 /* BookTableViewController.swift */,
+				30A9DD301E9BCEB100C13891 /* BookTableViewCell.swift */,
+			);
+			name = TableOfBooks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +150,6 @@
 			files = (
 				30A9DD261E9BC6E900C13891 /* LaunchScreen.storyboard in Resources */,
 				30A9DD231E9BC6E900C13891 /* Assets.xcassets in Resources */,
-				30A9DD211E9BC6E900C13891 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,22 +160,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30A9DD1E1E9BC6E900C13891 /* ViewController.swift in Sources */,
+				301BF7D21E9CEF0400245755 /* PageCollectionViewController.swift in Sources */,
+				30A9DD2E1E9BC8E200C13891 /* BookTableViewController.swift in Sources */,
+				30A9DD311E9BCEB100C13891 /* BookTableViewCell.swift in Sources */,
 				30A9DD1C1E9BC6E900C13891 /* AppDelegate.swift in Sources */,
+				30A9DD331E9BD4C300C13891 /* Model.swift in Sources */,
+				301BF7D41E9D074F00245755 /* PageCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		30A9DD1F1E9BC6E900C13891 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				30A9DD201E9BC6E900C13891 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		30A9DD241E9BC6E900C13891 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -299,6 +319,7 @@
 				30A9DD2C1E9BC6E900C13891 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
