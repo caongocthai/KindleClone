@@ -33,7 +33,9 @@ class BookTableViewController: UITableViewController {
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "menu").withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: nil)
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "amazon_icon").withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: nil)
     }
-    
+}
+
+extension BookTableViewController {
     func fetchData() {
         guard let url = URL(string: "https://letsbuildthatapp-videos.s3-us-west-2.amazonaws.com/kindle.json") else { return }
         
@@ -65,7 +67,7 @@ class BookTableViewController: UITableViewController {
                     self.tableView.reloadData()
                 }
             } catch { return }
-        }.resume()
+            }.resume()
     }
 }
 
